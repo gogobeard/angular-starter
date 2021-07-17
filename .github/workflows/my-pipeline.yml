@@ -21,8 +21,8 @@ jobs:
         run: npm install
       - name: ci
         run: npm ci
-      - name: puppeteer
-        run: npm install puppeteer
+      - name: install chrome
+        run: npm install chrome
       - name: Test
         run: npm test
 
