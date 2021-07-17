@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Install ttf-freefont
-        run: apt-get install ttf-freefont
+        run: sudo apt-get install ttf-freefont
       - name: Build
         run: npm run build
       - name: Test
