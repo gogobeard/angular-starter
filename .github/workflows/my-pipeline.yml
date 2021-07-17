@@ -9,14 +9,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on:  alpine-latest
 
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 14.15
+      - name: Use Node.js 14.17
         uses: actions/setup-node@v1
         with:
-         node-version: 14.15
+         node-version: 14.17
       - name: Install dependencies
         run: npm install
       - name: Build
